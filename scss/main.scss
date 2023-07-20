@@ -17,14 +17,12 @@
     justify-content: space-around;
     margin: 5em;
 
-    .imgProduct{
-
-    width: 8rem;
+   
 }
 
  figure{
     color: white;
-        width: 26%;
+        width:  400px;
         height: auto;
         border: solid grey;
         border-radius: 5px;
@@ -32,9 +30,8 @@
         color: black;
         font-size: 1em;
         text-align: center;
-}
 
- figure {
+
     
     figcaption{
 
@@ -63,7 +60,7 @@
 
 
 
-}
+
 
 @include tablet{
     
@@ -82,8 +79,8 @@
     
 
 }
-
 }
+
 //filters for products
 
 .filters{
