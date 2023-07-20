@@ -22,7 +22,7 @@
 
  figure{
     color: white;
-        width:  400px;
+        width:  300px;
         height: auto;
         border: solid grey;
         border-radius: 5px;
@@ -74,7 +74,7 @@
 
     flex-direction: column ;
     width: 100%;
-    margin-left: 170px ;
+    
     
     
 
@@ -120,14 +120,22 @@ span{
     color: white;
 }
 
+    @include tablet{
+        text-align: center ;
+        margin-top: 20px;
+        float: none;
+        display: grid;
+        width: 50%;
+    }
+
 }
 
 //form
 
 
 form{
-    width: 40%; 
-  height: 30%;
+    width: 400px; 
+  height: 1400px;
   margin: 80px auto;
   border-radius: 10px;  
   padding-top: 30px;
@@ -175,10 +183,11 @@ label{
 
 .maps{
 
-    width: 100%;
+    width: 300px;
+    height: 400px;
     display: flex;
-    position: relative;
-    align-items:center;
+    
+    
     
 
 }

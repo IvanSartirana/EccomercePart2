@@ -17,7 +17,7 @@ header{
     .search1{
         
         @include tablet{
-        margin-left: 70px;
+        
         align-items: center;
         }
     }
@@ -56,6 +56,12 @@ header{
     transition: background-color 0.3s ease-in-out;
     :hover{background-color: $Orange;
         color: white;}
+
+        @include tablet {
+
+          display: none;
+
+        }
 
         
     }

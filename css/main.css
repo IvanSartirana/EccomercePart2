@@ -176,7 +176,6 @@ header .Search {
 }
 @media screen and (max-width: 768px) {
   header .Search .search1 {
-    margin-left: 70px;
     align-items: center;
   }
 }
@@ -213,6 +212,11 @@ header .Search button :hover {
   color: white;
 }
 @media screen and (max-width: 768px) {
+  header .Search button {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
   header .borderContent {
     visibility: hidden;
   }
@@ -225,12 +229,10 @@ header .Search button :hover {
   justify-content: space-around;
   margin: 5em;
 }
-.products .imgProduct {
-  width: 8rem;
-}
-.products figure {
+
+figure {
   color: white;
-  width: 26%;
+  width: 300px;
   height: auto;
   border: solid grey;
   border-radius: 5px;
@@ -239,42 +241,41 @@ header .Search button :hover {
   font-size: 1em;
   text-align: center;
 }
-.products figure figcaption {
+figure figcaption {
   padding: 0 10px;
   margin-bottom: 10px;
   font-size: 1em;
 }
 @media screen and (max-width: 768px) {
-  .products figure figcaption {
+  figure figcaption {
     font-size: 10px;
   }
 }
-.products figure button {
+figure button {
   padding: 0.5em;
   border-radius: 2em;
   margin-bottom: 15px;
   background-color: rgb(216, 125, 20);
   color: white;
 }
-.products figure .imgProduct {
+figure .imgProduct {
   width: 8rem;
 }
 @media screen and (max-width: 768px) {
-  .products figure .imgProduct {
+  figure .imgProduct {
     width: 5rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .products {
+  figure {
     flex-direction: column 50%;
     width: 100%;
   }
 }
 @media screen and (max-width: 530px) {
-  .products {
+  figure {
     flex-direction: column;
     width: 100%;
-    margin-left: 170px;
   }
 }
 
@@ -304,10 +305,19 @@ header .Search button :hover {
   margin-left: 20px;
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .filters {
+    text-align: center;
+    margin-top: 20px;
+    float: none;
+    display: grid;
+    width: 50%;
+  }
+}
 
 form {
-  width: 40%;
-  height: 30%;
+  width: 400px;
+  height: 1400px;
   margin: 80px auto;
   border-radius: 10px;
   padding-top: 30px;
@@ -340,10 +350,9 @@ input {
 }
 
 .maps {
-  width: 100%;
+  width: 300px;
+  height: 400px;
   display: flex;
-  position: relative;
-  align-items: center;
 }
 
 .formTitle {
