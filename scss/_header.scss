@@ -1,0 +1,68 @@
+/* Estilos para el input con clase "Search" */
+
+
+header{
+  @include tablet {
+    
+    display: grid;
+        grid-template-columns: 100%;
+        margin-bottom:  10em;
+
+ }
+
+.Search {
+    display: flex;
+    align-items: center;
+
+    .search1{
+        
+        @include tablet{
+        margin-left: 70px;
+        align-items: center;
+        }
+    }
+    
+  
+    
+  
+   input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 250px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+   button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    :hover{background-color: $Orange;
+        color: white;}
+
+        
+    }
+  }
+  .borderContent{
+    @include tablet{
+    visibility: hidden
+}
+}
+}

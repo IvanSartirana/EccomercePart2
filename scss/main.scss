@@ -1,7 +1,9 @@
-@import "_vars";
-@import "_nav";
-@import "_mediaqueries";
-@import "_footer";
+@import "./vars";
+@import "./nav";
+@import "./mediaqueries";
+@import "./footer";
+@import "./header";
+
 
 
 //productos//
@@ -14,9 +16,13 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 5em;
+
+    .imgProduct{
+
+    width: 8rem;
 }
 
-.products figure{
+ figure{
     color: white;
         width: 26%;
         height: auto;
@@ -28,19 +34,18 @@
         text-align: center;
 }
 
-.products figure figcaption{
+ figure {
+    
+    figcaption{
 
     padding: 0 10px;
     margin-bottom: 10px;
     font-size: 1em;
+    @include tablet{
+        font-size: 10px;
+    }
 }
-
-.imgProduct{
-
-    width: 8rem;
-}
-
-.products figure button{
+ button{
 
     padding: 0.5em;
     border-radius: 2em;
@@ -48,13 +53,43 @@
     background-color: rgb(216, 125, 20) ;
     color: white;
 }
+.imgProduct{
 
+    width: 8rem;
+    @include tablet{
+        width: 5rem;
+    }
+}
+
+
+
+}
+
+@include tablet{
+    
+    flex-direction: column 50%;
+    
+    width: 100%;
+
+}
+
+@include mobile{
+
+    flex-direction: column ;
+    width: 100%;
+    margin-left: 170px ;
+    
+    
+
+}
+
+}
 //filters for products
 
 .filters{
 
     float: left;
-}    
+
 .filtList a{
 
     text-decoration: none;
@@ -68,7 +103,7 @@ ul{
     list-style: none;
 }
 
-.filters a:hover{
+ a:hover{
     color: rgb(216, 125, 20);
 }
 
@@ -88,7 +123,7 @@ span{
     color: white;
 }
 
-
+}
 
 //form
 

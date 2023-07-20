@@ -14,6 +14,10 @@ body {
   background-color: rgb(216, 125, 20);
 }
 
+p {
+  color: white;
+}
+
 .navBar {
   background-color: rgb(216, 125, 20);
   width: 100%;
@@ -25,48 +29,6 @@ body {
 }
 
 .navBar a {
-  color: white;
-}
-
-/* Estilos para el input con clase "Search" */
-.Search {
-  display: flex;
-  align-items: center;
-}
-
-.Search input[type=text] {
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  width: 250px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color: #333;
-  background-color: #f2f2f2;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.Search input[type=text]:focus {
-  outline: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-.Search button {
-  padding: 10px 15px;
-  margin-left: 10px;
-  background-color: aliceblue;
-  border: none;
-  border-radius: 20px;
-  color: black;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.Search button:hover {
-  background-color: rgb(216, 125, 20);
   color: white;
 }
 
@@ -138,92 +100,6 @@ header {
   height: 100px;
 }
 
-@media (width < 768px) {
-  .products {
-    flex-direction: column 15%;
-  }
-  .nav-item {
-    margin: auto;
-  }
-  header {
-    display: grid;
-    grid-template-columns: 100%;
-    margin-bottom: 10em;
-  }
-  .search1 {
-    margin-left: 70px;
-    align-items: center;
-  }
-  .Search button {
-    visibility: hidden;
-  }
-  .borderContent {
-    margin-top: 20px;
-  }
-  footer {
-    display: grid;
-    grid-template-columns: 100%;
-    text-align: center;
-    align-items: center;
-  }
-  .Sponsors img {
-    margin: auto;
-  }
-  .filters {
-    text-align: center;
-    margin-top: 20px;
-    float: none;
-  }
-  .form {
-    width: 60%;
-  }
-  div label, div input {
-    width: 60%;
-    font-size: 10px;
-  }
-  .form h3 {
-    font-size: 10px;
-  }
-  .form h1 {
-    font-size: 10px;
-  }
-  .form p {
-    font-size: 10px;
-  }
-}
-@media (width < 415px) {
-  .products {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  header input {
-    margin-right: 100px;
-  }
-  footer {
-    width: 100%;
-    font-size: 0.5em;
-  }
-}
-@media (width < 768px) {
-  .products {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: auto;
-  }
-  .products figure {
-    width: 100%;
-  }
-}
-@media (width < 320) {
-  .Sponsors {
-    font-size: 1em;
-  }
-  .products {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
 footer {
   margin-top: 200px;
   background-color: rgb(168, 92, 4);
@@ -232,55 +108,114 @@ footer {
   justify-content: space-between;
   box-sizing: border-box;
 }
-
-.socialsLogo {
+footer .socialsLogo {
   height: 20px;
   width: 20px;
   list-style: none;
   text-decoration: none;
   color: #fbfbfb;
 }
-
-.socials {
+footer .socials {
   color: white;
 }
-
-.socials ul {
+footer .socials ul {
   list-style: none;
   text-align: center;
 }
-
-.socials a {
+footer .socials a {
   color: white;
   text-decoration: none;
 }
-
-.Sponsors h2, p {
+footer .Sponsors h2, footer p {
   color: white;
   margin: 0;
 }
-
-.Sponsors h2 {
+footer .Sponsors h2 {
   margin-bottom: 20px;
 }
-
-.Sponsors img {
+footer .Sponsors img {
   margin-left: 100px;
   margin-bottom: 10px;
 }
-
-.contact h2 {
+@media screen and (max-width: 768px) {
+  footer .Sponsors img {
+    margin: 10px 10px;
+  }
+}
+footer .contact h2 {
   color: white;
   text-align: center;
 }
-
-.contact a {
+footer .contact a {
   text-decoration: none;
 }
-
-.contact ul {
+footer .contact ul {
   list-style: none;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Estilos para el input con clase "Search" */
+@media screen and (max-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-bottom: 10em;
+  }
+}
+header .Search {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  header .Search .search1 {
+    margin-left: 70px;
+    align-items: center;
+  }
+}
+header .Search input[type=text] {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 250px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+header .Search input[type=text]:focus {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+header .Search button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+header .Search button :hover {
+  background-color: rgb(216, 125, 20);
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  header .borderContent {
+    visibility: hidden;
+  }
 }
 
 .products {
@@ -290,7 +225,9 @@ footer {
   justify-content: space-around;
   margin: 5em;
 }
-
+.products .imgProduct {
+  width: 8rem;
+}
 .products figure {
   color: white;
   width: 26%;
@@ -302,17 +239,16 @@ footer {
   font-size: 1em;
   text-align: center;
 }
-
 .products figure figcaption {
   padding: 0 10px;
   margin-bottom: 10px;
   font-size: 1em;
 }
-
-.imgProduct {
-  width: 8rem;
+@media screen and (max-width: 768px) {
+  .products figure figcaption {
+    font-size: 10px;
+  }
 }
-
 .products figure button {
   padding: 0.5em;
   border-radius: 2em;
@@ -320,25 +256,42 @@ footer {
   background-color: rgb(216, 125, 20);
   color: white;
 }
+.products figure .imgProduct {
+  width: 8rem;
+}
+@media screen and (max-width: 768px) {
+  .products figure .imgProduct {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .products {
+    flex-direction: column 50%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .products {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 170px;
+  }
+}
 
 .filters {
   float: left;
 }
-
-.filtList a {
+.filters .filtList a {
   text-decoration: none;
   color: #fbfbfb;
 }
-
-ul {
+.filters ul {
   list-style: none;
 }
-
 .filters a:hover {
   color: rgb(216, 125, 20);
 }
-
-select {
+.filters select {
   display: flex;
   border: none;
   margin-bottom: 20px;
@@ -347,8 +300,7 @@ select {
   color: #fbfbfb;
   margin-left: 20px;
 }
-
-span {
+.filters span {
   margin-left: 20px;
   color: white;
 }

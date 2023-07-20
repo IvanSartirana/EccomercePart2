@@ -5,21 +5,18 @@ footer{
      display: flex;
      flex-direction: row;
      justify-content: space-between;
-     box-sizing: border-box
+     box-sizing: border-box;
    
-     
- }
- 
- 
+  
  .socialsLogo{
      height: 20px;
      width: 20px;
      list-style: none;
      text-decoration: none;
      color: #fbfbfb;
-     
- }
  
+ }
+
  
  .socials{
      color: white;
@@ -53,6 +50,10 @@ footer{
  
      margin-left: 100px;
      margin-bottom: 10px;
+
+     @include tablet {
+        margin: 10px 10px;
+     }
  }
  
  .contact  h2{
@@ -70,4 +71,15 @@ footer{
      list-style: none;
      text-align: center;
  }
- 
+
+
+ @include tablet {
+    
+    display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+        align-items: center;
+
+ }
+
+}

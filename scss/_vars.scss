@@ -4,6 +4,7 @@
 $Orange:rgb(216, 125, 20);
 $Blue: rgb(29, 28, 39);
 $FormBlue:rgb(51, 49, 77);
+$white: white;
 
 
 .navBar{
@@ -30,4 +31,8 @@ body{
 
     background-color: $Orange;
 
+}
+
+p{
+    color: $white;
 }
