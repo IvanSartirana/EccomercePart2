@@ -316,7 +316,7 @@ figure .imgProduct {
 }
 
 form {
-  width: 400px;
+  width: 1000px;
   height: 1400px;
   margin: 80px auto;
   border-radius: 10px;
@@ -337,6 +337,7 @@ form label, input {
 label {
   font-size: 20px;
   margin: 10px;
+  text-align: center;
 }
 
 input {
@@ -346,11 +347,12 @@ input {
 }
 
 .form {
-  width: 20rem;
+  width: 95%;
+  text-align: center;
 }
 
 .maps {
-  width: 300px;
+  width: 50%;
   height: 400px;
   display: flex;
 }
