@@ -86,5 +86,9 @@ header{
     @include tablet{
     visibility: hidden
 }
+  a{
+    text-decoration: none;
+    color: $white;
+  }
 }
 }

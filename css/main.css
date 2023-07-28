@@ -234,6 +234,10 @@ header .Search button :hover {
     visibility: hidden;
   }
 }
+header .borderContent a {
+  text-decoration: none;
+  color: white;
+}
 
 .products {
   display: flex;
@@ -424,6 +428,11 @@ input {
 
 .cleanPC {
   text-align: center;
+}
+
+.error {
+  width: 400px;
+  height: 1000%;
 }
 
 /*# sourceMappingURL=main.css.map */
