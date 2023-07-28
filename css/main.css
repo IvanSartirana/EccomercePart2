@@ -166,6 +166,15 @@ footer .contact ul {
   }
 }
 
+.saleAdvice {
+  text-align: center;
+  background-color: rgb(216, 125, 20);
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: static;
+}
+
 /* Estilos para el input con clase "Search" */
 @media screen and (max-width: 768px) {
   header {
@@ -269,6 +278,7 @@ figure button {
 }
 figure .imgProduct {
   width: 8rem;
+  margin: 10px auto;
 }
 @media screen and (max-width: 768px) {
   figure .imgProduct {
@@ -396,7 +406,24 @@ input {
 .cleanVid {
   width: 500px;
   height: 300px;
-  margin: 10px 10px;
+  margin: 20px auto;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .cleanVid {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .cleanVid {
+    width: 310px;
+    height: 300px;
+  }
+}
+
+.cleanPC {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

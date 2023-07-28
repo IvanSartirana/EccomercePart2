@@ -64,6 +64,8 @@
 .imgProduct{
 
     width: 8rem;
+    margin: 10px auto;
+    
     @include tablet{
         width: 5rem;
     }
@@ -241,11 +243,26 @@ color: rgb(51, 49, 77) ;
 
     width: 500px;
     height: 300px;
-    margin: 10px 10px;
+    margin: 20px auto;
+    display: block;
+
+    @include tablet{
+        width: 350px;
+    height: 300px;
+    }
+
+    @include mobile{
+
+        width: 310px;
+    height: 300px;
+
+    }
     
 
-    
-    
+}
 
 
+
+.cleanPC{
+    text-align: center;
 }
