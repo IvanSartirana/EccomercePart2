@@ -24,6 +24,10 @@ p {
   justify-content: space-between;
 }
 
+.Search button:hover {
+  background-color: rgb(216, 125, 20);
+}
+
 .navBar a:hover {
   color: rgb(29, 28, 39);
 }
@@ -228,6 +232,11 @@ header .Search button :hover {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 5em;
+}
+
+.products button:hover {
+  background-color: greenyellow;
+  color: rgb(29, 28, 39);
 }
 
 figure {
